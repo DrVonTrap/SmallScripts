@@ -1,0 +1,32 @@
+#!/bin/bash
+ 
+# Dependencies:
+# imagemagick
+# i3lock-color-git
+# scrot
+ 
+IMAGE=/tmp/i3lock.png
+LOCK=~/SmallScripts/i3lock-fancy/lock.png 
+TEXT=/tmp/locktext.png
+# All options are here: http://www.imagemagick.org/Usage/blur/#blur_args
+#BLURTYPE="0x5" # 7.52s
+#BLURTYPE="0x2" # 4.39s
+#BLURTYPE="5x3" # 3.80s
+#BLURTYPE="2x8" # 2.90s
+#BLURTYPE="2x3" # 2.92s
+
+sleep 0.1
+scrot $IMAGE
+
+[ -f $TEXT ] || {
+    convert -size 3000x60 xc:white -font Liberation-Sans -pointsize 26 -fill black -gravity center -annotate +0+0 'Type password to unlock' $TEXT;
+        convert $TEXT -alpha set -channel A -evaluate set 50% -antialias $TEXT;
+}
+
+#convert $IMAGE -level 0%,100%,0.6 -blur $BLURTYPE -font Liberation-Sans -pointsize 26 -fill white -gravity center -annotate +0+200 'Type password to unlock' - |
+convert $IMAGE -scale 50% -sample 20% - |
+convert - -sample 1000% -antialias - |
+composite -gravity center $LOCK - - | 
+composite -gravity center -geometry +0+200 $TEXT - $IMAGE
+
+i3lock -i $IMAGE
