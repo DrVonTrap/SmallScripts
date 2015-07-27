@@ -7,4 +7,4 @@ for p in vim zsh byobu make cmake git firefox g++ gcc curl gparted feh htop nloa
 #home PC
 for p in qbittorrent clementine dropbox i3lock xautolock scrot imagemagick screenfetch blender; do sudo apt-get install -y $p; done
 #OpenGL
-for p in freeglut3-dev libglew-dev libglm-dev; do sudo apt-get install -u $p; done
+for p in freeglut3-dev libglew-dev libglm-dev; do sudo apt-get install -y $p; done
