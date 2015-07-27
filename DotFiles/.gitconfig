@@ -1,0 +1,9 @@
+[user]
+	email = DrVonTrap@gmail.com
+	name = Freddie Ridell
+[difftool]
+	prompt = false
+[alias]
+	d = difftool
+[diff]
+	tool = vimdiff
