@@ -28,6 +28,10 @@ symlinkDotfiles () {
 	./symLink.sh
 }
 
+installPaper () {
+	echo "install paper GTK Theme"
+	./installTheme.sh
+}
 
 echo "Setup options:"
 echo "	0) apt-get update/upgrade"
@@ -36,8 +40,9 @@ echo "	2) apt-get for home setup"
 echo "	3) apt-get for OpenGL"
 echo "	4) install oh-my-zsh"
 echo "	5) symlink dotfiles"
+echo "	6) install paper GTK theme"
 
-read -p "which options would you like to perform?" input
+read -p "which options would you like to perform? " input
 echo "$input";
 
 case $input in
@@ -47,5 +52,6 @@ case $input in
 	3) aptGetOpenGL;;
 	4) installOMZ;;
 	5) symlinkDotfiles;;
+	6) installTheme;;
 esac
 
