@@ -6,22 +6,28 @@ aptGetUp () {
 
 aptGetBasics () {
 	echo "\t installing apt-get Basics"
-	for p in "$(cat AptGet/basic.txt)" ; do sudo apt-get install -y $p; done
+	while read p; do
+		echo sudo apt-get install -y $p
+	done < AptGet/basic.txt
 }
 
 aptGetHome () {
 	echo "\t installing apt-get Home"
-	for p in qbittorrent clementine dropbox i3lock xautolock scrot imagemagick screenfetch blender; do sudo apt-get install -y $p; done
+	while read p; do
+		echo sudo apt-get install -y $p
+	done < AptGet/home.txt
 }
 
 aptGetOpenGL () {
 	echo "\t installing apt-get OpenGL"
-	for p in freeglut3-dev libglew-dev libglm-dev; do sudo apt-get install -y $p; done
+	while read p; do
+		echo sudo apt-get install -y $p
+	done < AptGet/projects.txt
 }
 
 case $1 in
 	"-b") aptGetBasics;;
 	"-u") aptGetUp;;
 	"-h") aptGetHome;;
-	"-o") aptGetOpenGL;
+	"-p") aptGetOpenGL;
 esac

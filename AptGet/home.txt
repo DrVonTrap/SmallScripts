@@ -1,0 +1,10 @@
+qbittorrent
+clementine
+dropbox
+i3lock
+xautolock
+scrot
+imagemagick
+screenfetch
+blender
+steam
