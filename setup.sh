@@ -1,3 +1,16 @@
+sshKeyGen () {
+	ssh-keygen -t rsa -b 4096
+	ssh-add ~/.ssh/id_rsa
+	echo ""
+	echo ""
+	RSAKEY="$(cat ~/.ssh/id_rsa.pub)"
+	echo $RSAKEY
+	echo ""
+	echo ""
+	firefox "https://github.com/settings/ssh"
+	read -p "Copy this key whereever it needs to go, then press enter to continue the install process" temp
+}
+
 aptGetUp () {
 	echo "up[date|grade]ing apt-get"
 	./apt-get.sh -u
@@ -13,9 +26,13 @@ aptGetHome () {
 	./apt-get.sh -h
 }
 
-aptGetOpenGL () {
-	echo "aptGetOpenGL"
-	./apt-get.sh -o
+aptGetAndGitPullProjects () {
+	echo "aptGetAndGitPullProjects"
+	./apt-get.sh -p
+	pushd ~/Documents
+		git pull git@github.com:DrVonTrap/CityProject.git
+		git pull git@github.com:DrVonTrap/MusicRipper.git
+	popd
 }
 
 installOMZ () {
@@ -34,24 +51,26 @@ installPaper () {
 }
 
 echo "Setup options:"
-echo "	0) apt-get update/upgrade"
-echo "	1) apt-get basics"
-echo "	2) apt-get for home setup"
-echo "	3) apt-get for OpenGL"
-echo "	4) install oh-my-zsh"
-echo "	5) symlink dotfiles"
-echo "	6) install paper GTK theme"
+echo "	0) create ssh keys"
+echo "	1) apt-get update/upgrade"
+echo "	2) apt-get basics"
+echo "	3) apt-get for home setup"
+echo "	4) apt-get and git pull for your projects"
+echo "	5) install oh-my-zsh"
+echo "	6) symlink dotfiles"
+echo "	7) install paper GTK theme"	
 
 read -p "which options would you like to perform? " input
 echo "$input";
 
 case $input in
-	0) aptGetUp;;
-	1) aptGetBasics;;
-	2) aptGetHome;;
-	3) aptGetOpenGL;;
-	4) installOMZ;;
-	5) symlinkDotfiles;;
-	6) installTheme;;
+	0) sshKeyGen;;
+	1) aptGetUp;;
+	2) aptGetBasics;;
+	3) aptGetHome;;
+	4) aptGetAndGitPullProjects;;
+	5) installOMZ;;
+	6) symlinkDotfiles;;
+	7) installTheme;;
 esac
 
