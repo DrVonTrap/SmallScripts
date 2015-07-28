@@ -9,7 +9,7 @@ do
 	then
 		l=$(echo $f | sed -e 's/SmallScripts\/DotFiles\///g');
 		mv $l $l.old;
-		ln -r -s ./$f $l;
+		ln -sfn ~/$f ~/$l;
 		echo "SymLinked $l";
 	fi
 done
