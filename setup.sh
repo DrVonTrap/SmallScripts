@@ -71,6 +71,6 @@ case $input in
 	4) aptGetAndGitPullProjects;;
 	5) installOMZ;;
 	6) symlinkDotfiles;;
-	7) installTheme;;
+	7) installPaper;;
 esac
 
