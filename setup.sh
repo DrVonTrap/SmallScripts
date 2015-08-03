@@ -50,6 +50,12 @@ installPaper () {
 	./installTheme.sh
 }
 
+installI3Lock () {
+	scriptDir=$PWD;
+	cd /usr/local/bin
+		sudo ln -sfn $scriptDir/i3lock/lock lock
+}
+
 echo "Setup options:"
 echo "	0) create ssh keys"
 echo "	1) apt-get update/upgrade"
@@ -59,6 +65,8 @@ echo "	4) apt-get and git pull for your projects"
 echo "	5) install oh-my-zsh"
 echo "	6) symlink dotfiles"
 echo "	7) install paper GTK theme"	
+echo "	8) install custom i3lock"
+
 
 read -p "which options would you like to perform? " input
 echo "$input";
@@ -72,5 +80,7 @@ case $input in
 	5) installOMZ;;
 	6) symlinkDotfiles;;
 	7) installTheme;;
+	8) installI3Lock;;
+
 esac
 

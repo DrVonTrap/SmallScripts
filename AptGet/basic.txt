@@ -16,3 +16,4 @@ nethogs
 python-pip
 python3-pip
 sublime-text
+clang
