@@ -7,21 +7,21 @@ aptGetUp () {
 aptGetBasics () {
 	echo "\t installing apt-get Basics"
 	while read p; do
-		echo sudo apt-get install -y $p
+		sudo apt-get install -y $p
 	done < AptGet/basic.txt
 }
 
 aptGetHome () {
 	echo "\t installing apt-get Home"
 	while read p; do
-		echo sudo apt-get install -y $p
+		sudo apt-get install -y $p
 	done < AptGet/home.txt
 }
 
 aptGetOpenGL () {
 	echo "\t installing apt-get OpenGL"
 	while read p; do
-		echo sudo apt-get install -y $p
+		sudo apt-get install -y $p
 	done < AptGet/projects.txt
 }
 
