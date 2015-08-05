@@ -3,6 +3,14 @@
 	"spell_check": true,
 	"trim_trailing_white_space_on_save": true,
 	"save_on_focus_lost": true,
-	"atomic_save": true
+	"atomic_save": true,
+	"font_options":
+	[
+		"subpixel_antialias"
+	],
+	"ignored_packages":
+	[
+		"Vintage",
+		"Markdown"
+	],
 }
-
