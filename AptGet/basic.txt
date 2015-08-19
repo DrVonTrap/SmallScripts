@@ -11,6 +11,7 @@ curl
 gparted
 feh
 htop
+iotop
 nload
 nethogs
 python-pip
@@ -18,3 +19,6 @@ python3-pip
 sublime-text
 clang
 gitk
+synergy
+quicksynergy
+pandoc

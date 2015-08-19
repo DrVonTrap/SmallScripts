@@ -8,3 +8,4 @@ imagemagick
 screenfetch
 blender
 steam
+syncthing
