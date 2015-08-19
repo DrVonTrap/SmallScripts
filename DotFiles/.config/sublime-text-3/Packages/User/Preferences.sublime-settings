@@ -1,4 +1,8 @@
 {
+	"rulers": [80],
+	"spell_check": true,
+	"trim_trailing_white_space_on_save": true,
+	"save_on_focus_lost": true,
 	"atomic_save": true,
 	"font_options":
 	[
@@ -9,10 +13,4 @@
 		"Vintage",
 		"Markdown"
 	],
-	"rulers":
-	[
-		80
-	],
-	"save_on_focus_lost": true,
-	"spell_check": true
 }
