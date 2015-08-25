@@ -1,0 +1,13 @@
+gparted
+feh
+ttf-ancient-fonts
+gitk
+pandoc
+clementine
+dropbox
+i3lock
+xautolock
+scrot
+imagemagick
+screenfetch
+syncthing

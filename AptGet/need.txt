@@ -5,21 +5,16 @@ make
 cmake
 git
 firefox
-g++
-gcc
+g++ gcc
 curl
-gparted
-feh
 htop
 iotop
 nload
 nethogs
 python-pip
 python3-pip
-sublime-text
-clang
-ttf-ancient-fonts
+clang-3.6
+clang++-3.6
+lldb-3.6
 gitk
-synergy
-quicksynergy
 pandoc
