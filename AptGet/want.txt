@@ -11,3 +11,4 @@ scrot
 imagemagick
 screenfetch
 syncthing
+gtk-theme-switch
