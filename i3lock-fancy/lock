@@ -15,7 +15,7 @@ TEXT=/tmp/locktext.png
 #BLURTYPE="2x8" # 2.90s
 #BLURTYPE="2x3" # 2.92s
 
-sleep 0.1
+sleep 0.2
 scrot $IMAGE
 
 [ -f $TEXT ] || {
