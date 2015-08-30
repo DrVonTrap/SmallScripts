@@ -12,3 +12,4 @@ imagemagick
 screenfetch
 syncthing
 gtk-theme-switch
+lame
