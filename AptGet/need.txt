@@ -13,9 +13,9 @@ nload
 nethogs
 python-pip
 python3-pip
-clang-3.6
-clang++-3.6
-lldb-3.6
+clang
+clang++
+lldb-3.4
 gitk
 pandoc
 qalc
