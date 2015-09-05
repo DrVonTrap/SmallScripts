@@ -13,3 +13,4 @@ screenfetch
 syncthing
 gtk-theme-switch
 lame
+variety
