@@ -19,3 +19,5 @@ lldb-3.4
 gitk
 pandoc
 qalc
+pv
+openssh-server

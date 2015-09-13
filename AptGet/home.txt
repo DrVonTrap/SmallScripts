@@ -1,3 +1,4 @@
 qbittorrent
 blender
 steam
+xbmc
