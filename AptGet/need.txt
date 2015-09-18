@@ -20,3 +20,4 @@ gitk
 pandoc
 qalc
 pv
+openssh-server
