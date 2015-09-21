@@ -21,3 +21,5 @@ pandoc
 qalc
 pv
 openssh-server
+gdebi
+aptitude
