@@ -21,3 +21,6 @@ pandoc
 qalc
 pv
 openssh-server
+gdebi
+aptitude
+apt-file
