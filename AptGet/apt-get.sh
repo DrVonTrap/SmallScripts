@@ -4,10 +4,10 @@ sudo apt-get upgrade -y
 
 echo "\t installing apt-get Basics"
 for file in $@; do
-	while read package; do
+	while read -u 10  package; do
 		echo
 		echo "$package:"
 		echo
 		sudo apt-get install -y $package
-	done < $file
+	done 10< $file
 done;
