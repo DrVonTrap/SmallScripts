@@ -12,10 +12,3 @@ libxcb-xinerama0-dev
 libxcb-xkb-dev
 libxkbcommon-dev
 libxkbcommon-x11-dev
-
-i3status
-libgldi3
-dmenu
-clipit
-compton
-conky

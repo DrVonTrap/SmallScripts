@@ -1,0 +1,6 @@
+i3status
+libgldi3
+dmenu
+clipit
+compton
+conky

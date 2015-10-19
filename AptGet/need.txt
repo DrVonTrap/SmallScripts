@@ -14,7 +14,6 @@ nethogs
 python-pip
 python3-pip
 clang
-clang++
 lldb-3.4
 gitk
 pandoc

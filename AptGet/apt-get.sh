@@ -1,3 +1,6 @@
+#! /bin/bash
+
+
 echo "\t up[date|grade]ing apt-get"
 sudo apt-get update
 sudo apt-get upgrade -y
