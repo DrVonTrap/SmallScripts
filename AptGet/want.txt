@@ -14,3 +14,5 @@ syncthing
 gtk-theme-switch
 lame
 blender
+i3
+gnome-terminal
