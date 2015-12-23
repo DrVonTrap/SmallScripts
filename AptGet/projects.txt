@@ -4,3 +4,4 @@ libglm-dev
 
 libboost-all-dev
 libssl-dev
+libsdl2-dev
