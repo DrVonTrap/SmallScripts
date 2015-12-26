@@ -16,3 +16,4 @@ lame
 blender
 i3
 gnome-terminal
+jmtpfs
